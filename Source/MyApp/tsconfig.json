@@ -1,0 +1,10 @@
+{
+  "compileOnSave": false, // disable VS building on save
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [ "dom", "es2017" ],
+    "module": "amd",
+    "moduleResolution": "node"
+  }
+}
+
