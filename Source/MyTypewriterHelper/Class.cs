@@ -6,7 +6,7 @@ namespace MyTypewriterHelper
     {
         public static string PrintDebug(Class c)
         {
-            return c.Namespace;
+            return c.Name;
         }
     }
 

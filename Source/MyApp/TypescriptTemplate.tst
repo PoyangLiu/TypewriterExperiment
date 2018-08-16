@@ -14,6 +14,7 @@ ${
 
 }$PrintTimestamp
 $Classes($HasExportToTypeScriptAttribute)[
+// $Debug
 export interface $Name$TypeParameters {
     $Properties[
     $Name: $Type;]
@@ -26,6 +27,7 @@ export enum $Name {
     $Name = $Value,]
 }]
 $Interfaces($HasExportToTypeScriptAttribute)[
+// $Debug
 export interface $Name$TypeParameters {
     $Properties[
     $Name: $Type;]
