@@ -1,10 +1,8 @@
-﻿using Typewriter.CodeModel;
-
-namespace MyTypewriterHelper
+﻿namespace Typewriter.CodeModel
 {
      public static partial class TypewriterHelper
     {
-        public static string PrintDebug(Class c)
+        public static string PrintDebug(this Class c)
         {
             return c.Name;
         }

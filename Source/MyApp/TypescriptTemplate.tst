@@ -3,14 +3,13 @@
 #reference "~~\MyTypewriterHelper\bin\Debug\MyTypewriterHelper.dll"
 ${
     using Typewriter.Extensions.Types;
-    using MyTypewriterHelper;
 
     Template(Settings settings) { settings.IncludeCurrentProject(); }
     
     string PrintTimestamp(File f) => string.Format("// Generated on {0:yyyy-MM-dd HH:mm:ss tt}", DateTime.Now);
     bool HasExportToTypeScriptAttribute(dynamic item) => TypewriterHelper.HasExportToTypeScriptAttribute(item);
-    string Debug(Class c) => TypewriterHelper.PrintDebug(c);
-    string Debug(Interface i) => TypewriterHelper.PrintDebug(i);
+    string Debug(Class c) => c.PrintDebug();
+    string Debug(Interface i) => i.PrintDebug();
 
 }$PrintTimestamp
 $Classes($HasExportToTypeScriptAttribute)[

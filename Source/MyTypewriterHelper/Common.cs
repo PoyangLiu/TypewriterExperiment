@@ -1,9 +1,7 @@
 ﻿using System.Linq;
-using Typewriter.CodeModel;
 
-namespace MyTypewriterHelper
+namespace Typewriter.CodeModel
 {
-    // Bug: Unfortunately we cannot extend existing TypeWriter.CodeModel classes.
     public static partial class TypewriterHelper
     {
         public static string ExportToTypescriptAttributeName = "ExportToTypescript";
